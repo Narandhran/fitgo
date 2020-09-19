@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sub {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p> <strong>Hi {{this.fullname}},</strong></p>
+        <p> <strong> Greetings from Fit-figo</strong></p>
+    </div>
+    <div>
+        <p> Your login credentials for Fit-figo application are as follows,</p>
+        <h2>Login Details</h2>
+        <table class="sub">
+            <tr>
+                <th>LOGIN ID</th>
+                <th>PASSWORD</th>
+            </tr>
+            <tr>
+                <td>{{this.username}}</td>
+                <td>{{this.password}}</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
